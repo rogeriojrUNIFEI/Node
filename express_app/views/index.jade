@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Bem-vindo ao #{title}
+  h2.
+    Um texto muito grande que nao cabe numa
+    linha so
+  - var variavel = true
+  if variavel
+    p Verdade
+  else
+    p Mentira
