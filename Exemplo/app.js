@@ -8,7 +8,7 @@ function onRequest(req,res) {
   fs.readFile('htmlPage.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
-      res.end(hora_data.myDateTime());
+      res.end();
   });
 
 }
